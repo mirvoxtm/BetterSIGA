@@ -1,7 +1,7 @@
 <h1 text-align="center">📚 ⟩ BetterSIGA ⟨ 📚</h1>
 <img align="right" width="25%" height="25%" src="readlogo.png">
 
-Uma implementação Front-End modernizada do SIGA, utilizando <u><b>TailwindCSS</b></u>.
+Uma implementação Front-End modernizada do SIGA,<br>utilizando <u><b>TailwindCSS</b></u>.
 <br>
 BetterSIGA tem como intúito demonstrar uma interface fiel, porém mais moderna da UI atual do SIGA. 
 <br><br>
