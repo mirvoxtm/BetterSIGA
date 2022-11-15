@@ -2,7 +2,7 @@
 <img align="right" width="25%" height="25%" src="readlogo.png">
 
 Uma implementação Front-End modernizada do SIGA,<br>utilizando <u><b>TailwindCSS</b></u>.
-BetterSIGA tem como intúito demonstrar uma interface fiel,<br> porém mais moderna da UI atual do SIGA. 
+BetterSIGA tem como intúito<br>demonstrar uma interface fiel,<br> porém mais moderna da UI atual do SIGA. 
 <br><br>
 Este projeto é uma <i>proof of concept</i>, e foi feito para eu treinar minhas<br>habilidades com TailwindCSS. 
 <br><br>
