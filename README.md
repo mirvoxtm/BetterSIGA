@@ -7,6 +7,6 @@ BetterSIGA tem como intúito<br>demonstrar uma interface fiel, porém mais moder
 Este projeto é uma <i>proof of concept</i>, e foi feito para eu treinar minhas<br>habilidades com TailwindCSS. 
 <br><br>
 <hr>
-<h3 align="center"><b>⟨Nenhum funcionamento ainda está disponível, já que não existe Back-End. Isto é apenas um conceito.⟩</b><h3>
+<h3 align="center"><b>⟨Nenhum funcionamento ainda está disponível (ainda!). Isto é apenas um conceito.⟩</b><h3>
 <br>
 <br>
