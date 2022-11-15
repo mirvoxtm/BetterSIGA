@@ -1,0 +1,61 @@
+html {
+    scroll-behavior: smooth;
+    
+}
+
+.bgmovie {
+	background: linear-gradient(-45deg, #ffffff, #e8e8e8, #e9eeef, #f7fffd);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+.login {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.wrapper .sidebar{
+    background: rgb(242, 250, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+}
+
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #ababab #ffffff;
+  }
+
+*::-webkit-scrollbar {
+    width: 9px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #ababab;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+}
