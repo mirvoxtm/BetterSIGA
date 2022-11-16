@@ -59,3 +59,12 @@ html {
     border-radius: 10px;
     border: 3px solid #ffffff;
 }
+
+#main {
+    transition: 0.3s;
+  }
+  
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}

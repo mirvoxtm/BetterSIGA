@@ -10,14 +10,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <script>        
+        function openNav() {
+        document.getElementById("sidenav").style.width = "300px";
+        document.getElementById("main").style.marginLeft = "300px";
+        }
+  
+        function closeNav() {
+            document.getElementById("sidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+  }
+    </script>
+    
     <title>BetterSIGA</title>
 </head>
 
-<body class="bgmovie">
+<body onload="closeNav();"class="bgmovie">
 
 <!--Inicio Sidebar-->
-  <div class="sidebar solid fixed top-0 bottom-0  p-2 w-[300px] overflow-y-auto text-center bg-white/90 drop-shadow-2xl">
-    <div class="drop-shadow-xl">
+  <div id="sidenav" class="sidebar backdrop-blur-[2px] align-left solid fixed top-0 bottom-0 overflow-y-auto bg-white/90 drop-shadow-2xl" style="transition: 0.3s; z-index: 1;">
+    <a href="javascript:void(0)" class="closebtn text-right" onclick="closeNav()"><p style="font-size: 30px;" class="p-2">&times; </p></a>
+
+    <div class="drop-shadow-xl text-center p-2">
         <center>
         <img src="Recursos/user.png" width="180" height="180" class="p-6">
         <p style="font-family: 'Roboto', sans-serif;">Fulano da Silva</p>
@@ -64,9 +78,16 @@
   </div>
 <!--Fim Sidebar-->
 
+<!--Sidebar Closed-->
+<div class="backdrop-blur-[15px] p-5 pr-[30px] bg-white/90 drop-shadow-2xl" style="position: fixed; top: 0; width: 100%;">
+    <button class="openbtn ml-5" onclick="openNav()">&#9776;</button>
+    <span style="float: right;" ><img src="Recursos/cps.png" width="40" height="40"></span>
+</div>
+
+<div id="main">
+    <img src="Recursos/websai.png" width="100%" height="100%">
+</div>
+
 <!--Conteúdo-->
-    <section class="ml-[320px]">
-    <p>teste</p>
-    </section>
 </body>
 </html>
