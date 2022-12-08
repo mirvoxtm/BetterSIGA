@@ -10,10 +10,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 
     <title>BetterSIGA</title>
+
+    <script>
+        var load;
+        
+        function loadfun() {
+            load = setTimeout(showPage, 1000);
+        }
+        
+        function showPage() {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("myDiv").style.display = "block";
+        }
+        </script>
+
 </head>
 
-<body class="bgmovie">    
+<body onload="loadfun()" class="bgmovie">    
 
+<div id="myDiv" class="animate-bottom">
+    <div id="loader"></div>
     <div class="p-6 login drop-shadow-2xl bg-white/90 bg-blur-md rounded-lg">
         <center>
         <img src="Recursos/logo.png" width="300" height="400" class="p-6 pb-8 drop-shadow-xl">
@@ -33,5 +49,6 @@
             <a class="text-sky-500 underline decoration-sky-500 hover:decoration-sky-700 hover:text-sky-700 overflow-hidden" href="sol.html"><p style="font-family: 'Roboto', sans-serif;"></p>Solução para problemas no Acesso</p></a>
             </center>
     </div>
+</div>
 </body>
 </html>
