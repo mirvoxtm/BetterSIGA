@@ -2,113 +2,270 @@
 
 
 <html onload="loadfun();">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="style.css"/>
+
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <script>        
+    <script>
         function openNav() {
-        document.getElementById("sidenav").style.width = "300px";
-        document.getElementById("main").style.marginLeft = "300px";
+            document.getElementById("sidenav").style.width = "300px";
         }
-  
+
         function closeNav() {
             document.getElementById("sidenav").style.width = "0";
             document.getElementById("main").style.marginLeft = "0";
-  }
+        }
 
-    var load;
-    
-    function loadfun() {
-        load = setTimeout(showPage, 1000);
-    }
-    
-    function showPage() {
-      document.getElementById("loader").style.display = "none";
-      document.getElementById("myDiv").style.display = "block";
-    }
+        function Segunda() {
+            document.getElementById("segunda").style.visibility = "visible";
+            document.getElementById("terca").style.visibility = "hidden";
+            document.getElementById("quarta").style.visibility = "hidden";
+            document.getElementById("quinta").style.visibility = "hidden";
+            document.getElementById("sexta").style.visibility = "hidden";
+        }
 
-</script>
+        function Terca() {
+            document.getElementById("segunda").style.visibility = "hidden";
+            document.getElementById("terca").style.visibility = "visible";
+            document.getElementById("quarta").style.visibility = "hidden";
+            document.getElementById("quinta").style.visibility = "hidden";
+            document.getElementById("sexta").style.visibility = "hidden";
+        }
+
+        function Quarta() {
+            document.getElementById("segunda").style.visibility = "hidden";
+            document.getElementById("terca").style.visibility = "hidden";
+            document.getElementById("quarta").style.visibility = "visible";
+            document.getElementById("quinta").style.visibility = "hidden";
+            document.getElementById("sexta").style.visibility = "hidden";
+        }
+
+        function Quinta() {
+            document.getElementById("segunda").style.visibility = "hidden";
+            document.getElementById("terca").style.visibility = "hidden";
+            document.getElementById("quarta").style.visibility = "hidden";
+            document.getElementById("quinta").style.visibility = "visible";
+            document.getElementById("sexta").style.visibility = "hidden";
+        }
+
+        function Sexta() {
+            document.getElementById("segunda").style.visibility = "hidden";
+            document.getElementById("terca").style.visibility = "hidden";
+            document.getElementById("quarta").style.visibility = "hidden";
+            document.getElementById("quinta").style.visibility = "hidden";
+            document.getElementById("sexta").style.visibility = "visible";
+        }
+        var load;
+
+        function loadfun() {
+            load = setTimeout(showPage, 1000);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
+    </script>
 
     <title>BetterSIGA</title>
+
+    <style>
+        html {
+            animation: fadeInAnimation ease 10s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 
 
 
-<body onload="closeNav(); loadfun();" class="bgmovie animate-bottom">
-    
+<body onload="closeNav(); loadfun(); Segunda();" class="bgmovie">
+
     <!--Inicio Sidebar-->
-  <div id="sidenav" class="sidebar backdrop-blur-[2px] align-left solid fixed top-0 bottom-0 overflow-y-auto bg-white/90 drop-shadow-2xl" style="transition: 0.3s; z-index: 1;">
-    <a href="javascript:void(0)" class="closebtn text-right" onclick="closeNav()"><p style="font-size: 30px;" class="p-2">&times; </p></a>
+    <div id="sidenav"
+        class="sidebar backdrop-blur-[18px] align-left solid fixed top-0 bottom-0 overflow-y-auto bg-white/90 drop-shadow-2xl"
+        style="transition: 0.3s; z-index: 1;">
+        <a href="javascript:void(0)" class="closebtn text-right" onclick="closeNav()">
+            <p style="font-size: 30px;" class="p-2">&times; </p>
+        </a>
 
-    <div class="drop-shadow-xl text-center p-2">
-        <center>
-        <img src="Recursos/user.png" width="180" height="180" class="p-6">
-        <p style="font-family: 'Roboto', sans-serif;">Fulano da Silva</p>
-        <p style="font-family: 'Roboto', sans-serif; color: rgb(188, 188, 188);">fulano@exemplo.com</p>
-        <p style="font-family: 'Roboto', sans-serif; color: rgb(188, 188, 188); font-size: 10px;" class="py-2">Análise e Desenvolvimento de Sistemas - Manhã</p>
-        <br>
-        <hr>
-        <br>
+        <div class="drop-shadow-xl text-center p-2">
+            <center>
+                <img src="Recursos/user.png" width="180" height="180" class="p-6">
+                <p style="font-family: 'Roboto', sans-serif;">Fulano da Silva</p>
+                <p style="font-family: 'Roboto', sans-serif; color: rgb(188, 188, 188);">fulano@exemplo.com</p>
+                <p style="font-family: 'Roboto', sans-serif; color: rgb(188, 188, 188); font-size: 10px;" class="py-2">
+                    Análise e Desenvolvimento de Sistemas - Manhã</p>
+                <br>
+                <hr>
+                <br>
 
-        <div class="grid grid-rows-2 grid-flow-col text-left px-8">
-        <p style="font-family: 'Roboto', sans-serif; color: rgb(188, 188, 188); font-size: 12px;"><b>RA:</b> 0012345678910-1</p>
-        <p style="font-family: 'Roboto', sans-serif; color: rgb(188, 188, 188); font-size: 12px;"><b>CICLO:</b> 2</p>
-    
-        <p style="font-family: 'Roboto', sans-serif; color: rgb(188, 188, 188); font-size: 12px;"><b>PP:</b> 7.14%</p>
-        <p style="font-family: 'Roboto', sans-serif; color: rgb(188, 188, 188); font-size: 12px;"><b>PR:</b> 8.16%</p>
-    </div>
-        <br>
-        <hr>
-        <div id="dropdown-cta" class="p-4 mt-6 bg-blue-50 rounded-lg dark:bg-blue-900" role="alert">
-            <div class="flex items-center mb-3">
-            </div>
-            <p class="mb-3 text-sm text-blue-900 dark:text-blue-400">
-                Inscreva-se para o Intercâmbio Cultural CPS 2022 e concorra a um Curso de Língua Inglesa na Inglaterra ou na Irlanda. <a href="#" class="underline hover:decoration-solid"><span class="text-blue-300">Saiba Mais.</span></a>
-            </p>
-         </div>
-        </center>
-    </div>
-        <br>
-        <hr>
-        <br>
-    <center>
-    <a href="page.html"><button style="font-family: 'Roboto', sans-serif;" class="w-32 p-2 px-4 bg-zinc-400/80 rounded-lg hover:bg-zinc-400/100 text-white"><i class="fa fa-file-text"></i>  Histórico</button></a>
-    <a href="page.html"><button style="font-family: 'Roboto', sans-serif;" class="w-32 p-2 px-4 bg-zinc-400/80 rounded-lg hover:bg-zinc-400/100 text-white"><i class="fa fa-dot-circle-o"></i>  Grade</button></a>
-    <br>
-    <a href="page.html"><button style="font-family: 'Roboto', sans-serif;" class="w-32 p-2 px-4 my-2 bg-zinc-400/80 rounded-lg hover:bg-zinc-400/100 text-white"><i class="fa fa-paperclip"></i>  Notas</button></a>
-    <a href="page.html"><button style="font-family: 'Roboto', sans-serif;" class="w-32 p-2 px-4 bg-zinc-400/80 rounded-lg hover:bg-zinc-400/100 text-white"><i class="fa fa-undo"></i>  Faltas</button></a>
-   <br>
-    <a href="page.html"><button style="font-family: 'Roboto', sans-serif;" class="w-32 p-2 px-4 bg-zinc-400/80 rounded-lg hover:bg-zinc-400/100 text-white truncate"><i class="fa fa-address-card"></i> Conta</button></a>
-    <a href="page.html"><button style="font-family: 'Roboto', sans-serif;" class="w-32 p-2 px-4 bg-zinc-400/80 rounded-lg hover:bg-zinc-400/100 text-white truncate	"><i class="fa fa-paste"></i> Docs</button></a>
-    <br><br>
-    </div>
-    </div>
-  </center>
-  </div>
-<!--Fim Sidebar-->
+                <div class="grid grid-rows-2 grid-flow-col text-left px-8">
+                    <p style="font-family: 'Roboto', sans-serif; color: rgb(188, 188, 188); font-size: 12px;"><b>RA:</b>
+                        0012345678910-1</p>
+                    <p style="font-family: 'Roboto', sans-serif; color: rgb(188, 188, 188); font-size: 12px;">
+                        <b>CICLO:</b> 2</p>
 
-<!--Sidebar Closed-->
-<div class="backdrop-blur-[15px] p-5 pr-[30px] bg-white/90 drop-shadow-2xl" style="position: fixed; top: 0; width: 100%;">
-    <button class="openbtn ml-5" onclick="openNav()">&#9776;</button>
-    <span style="float: right;" ><img src="Recursos/cps.png" width="40" height="40"></span>
-</div>
-
-    <div id="main" style="transition: 0.3s;">
-        <div class="pt-10"><br>
-        <section class="avisos">
-        <div class="p-[23%]">
+                    <p style="font-family: 'Roboto', sans-serif; color: rgb(188, 188, 188); font-size: 12px;"><b>PP:</b>
+                        7.14%</p>
+                    <p style="font-family: 'Roboto', sans-serif; color: rgb(188, 188, 188); font-size: 12px;"><b>PR:</b>
+                        8.16%</p>
+                </div>
+                <br>
+                <hr>
+                <div id="dropdown-cta" class="p-4 mt-6 bg-blue-50 rounded-lg dark:bg-blue-900" role="alert">
+                    <div class="flex items-center mb-3">
+                    </div>
+                    <p class="mb-3 text-sm text-blue-900 dark:text-blue-400">
+                        Inscreva-se para o Intercâmbio Cultural CPS 2022 e concorra a um Curso de Língua Inglesa na
+                        Inglaterra ou na Irlanda. <a href="#" class="underline hover:decoration-solid"><span
+                                class="text-blue-300">Saiba Mais.</span></a>
+                    </p>
+                </div>
+            </center>
         </div>
-        </section>
+        <br>
+        <hr>
+        <br>
+    </div>
+    <!--Fim Sidebar-->
+
+    <!--Sidebar Closed-->
+    <div class="backdrop-blur-[15px] p-5 pr-[30px] bg-white/90 drop-shadow-md"
+        style="position: fixed; top: 0; width: 100%; border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;">
+        <button class="openbtn ml-5" onclick="openNav()">&#9776;</button>
+        <span style="float: right;"><img src="Recursos/cps.png" width="40" height="40"></span>
     </div>
 
-<!--Conteúdo-->
+
+    <!--Conteúdo-->
+    <div id="main" style="transition: 0.3s;">
+        <br> <br>
+        <br>
+
+        <section class="avisos">
+            <div class="mt-[-10px] p-[23%] rounded-2xl">
+            </div>
+            </section>
+        <!-- SEGUNDA FEIRA -->
+
+        <div id="segunda">
+            <div class="box-border ml-2 mr-2 h-auto p-1 rounded-xl bg-white shadow-2xl mt-3">
+                <center>
+                    <div class="pt-3 pb-3"></div>
+                    <div class="ml-4 mr-4 grid grid-cols-6 gap-5">
+
+                        <div class="p-1 border-1 grey rounded-xl bg-white shadow-md">
+                            <p style="font-family: 'Roboto', sans-serif;" class="pt-1">AAG001</p>
+                            <p style="font-family: 'Roboto', sans-serif; font-size: 12px" class="pb-2">Administraçào
+                                Geral</p>
+                            <hr>
+                            <p style="font-family: 'Roboto', sans-serif; font-size: 12px" class="pt-2 pb-2">07:00 |
+                                08:00</p>
+                            <hr>
+                            <p style="font-family: 'Roboto', sans-serif; font-size: 12px" class="pt-3 pb-2">
+                                PROFESSOR RUBENS CURY</p>
+                        </div>
+
+                        <div class="p-1 border-1 grey rounded-xl bg-white shadow-md">
+                            <p style="font-family: 'Roboto', sans-serif;" class="pt-1">AAG001</p>
+                            <p style="font-family: 'Roboto', sans-serif; font-size: 12px" class="pb-2">Administraçào
+                                Geral</p>
+                            <hr>
+                            <p style="font-family: 'Roboto', sans-serif; font-size: 12px" class="pt-2 pb-2">08:00 |
+                                09:00</p>
+                            <hr>
+                            <p style="font-family: 'Roboto', sans-serif; font-size: 12px" class="pt-3 pb-2">
+                                PROFESSOR RUBENS CURY</p>
+                        </div>
+
+                        <div class="p-1 border-1 grey rounded-xl bg-white shadow-md">
+                            <p style="font-family: 'Roboto', sans-serif;" class="pt-1">AAG001</p>
+                            <p style="font-family: 'Roboto', sans-serif; font-size: 12px" class="pb-2">Administraçào
+                                Geral</p>
+                            <hr>
+                            <p style="font-family: 'Roboto', sans-serif; font-size: 12px" class="pt-2 pb-2">09:00 |
+                                10:00</p>
+                            <hr>
+                            <p style="font-family: 'Roboto', sans-serif; font-size: 12px" class="pt-3 pb-2">
+                                PROFESSOR RUBENS CURY</p>
+                        </div>
+
+                        <div class="p-1 border-1 grey rounded-xl bg-white shadow-md">
+                            <p style="font-family: 'Roboto', sans-serif;" class="pt-1">AAG001</p>
+                            <p style="font-family: 'Roboto', sans-serif; font-size: 12px" class="pb-2">Administraçào
+                                Geral</p>
+                            <hr>
+                            <p style="font-family: 'Roboto', sans-serif; font-size: 12px" class="pt-2 pb-2">10:00 |
+                                11:00</p>
+                            <hr>
+                            <p style="font-family: 'Roboto', sans-serif; font-size: 12px" class="pt-3 pb-2">
+                                PROFESSOR RUBENS CURY</p>
+                        </div>
+
+                        <div class="p-1 border-1 grey rounded-xl bg-white shadow-md">
+                            <p style="font-family: 'Roboto', sans-serif;" class="pt-1">MMD001</p>
+                            <p style="font-family: 'Roboto', sans-serif; font-size: 12px" class="pb-2">Matemática
+                                Discreta</p>
+                            <hr>
+                            <p style="font-family: 'Roboto', sans-serif; font-size: 12px" class="pt-2 pb-2">11:00 |
+                                12:00</p>
+                            <hr>
+                            <p style="font-family: 'Roboto', sans-serif; font-size: 12px" class="pt-5 pb-2">
+                                PROFESSOR LOURVAL</p>
+                        </div>
+
+                        <div class="p-1 border-1 grey rounded-xl bg-white shadow-md">
+                            <p style="font-family: 'Roboto', sans-serif;" class="pt-1">MMD001</p>
+                            <p style="font-family: 'Roboto', sans-serif; font-size: 12px" class="pb-2">Matemática
+                                Discreta</p>
+                            <hr>
+                            <p style="font-family: 'Roboto', sans-serif; font-size: 12px" class="pt-2 pb-2">12:00 |
+                                13:00</p>
+                            <hr>
+                            <p style="font-family: 'Roboto', sans-serif; font-size: 12px" class="pt-5 pb-2">
+                                PROFESSOR LOURVAL</p>
+                        </div>
+                        <br>
+
+                </center>
+            </div>
+
+            <div class="box-border ml-2 mr-2 h-auto p-2 mt-2 rounded-2xl bg-white shadow-2xl float-right relative">
+                <center>
+                    <button onclick="Segunda()"
+                        class=" backdrop-blur-[15px] py-2 px-2 shadow-xl no-underline rounded-full hover:bg-grey-400 hover:text-white font-sans font-semibold text-sm border-orange btn-primary hover:bg-black/40 focus:outline-none active:shadow-xl mr-2">Segunda-Feira</button>
+                    <button onclick="Terca()"
+                        class=" backdrop-blur-[15px] py-2 px-2 shadow-xl no-underline rounded-full hover:bg-grey-400 hover:text-white font-sans font-semibold text-sm border-orange btn-primary hover:bg-black/40 focus:outline-none active:shadow-xl mr-2">Terça-Feira</button>
+                    <button onclick="Quarta()"
+                        class=" backdrop-blur-[15px] py-2 px-2 shadow-xl no-underline rounded-full hover:bg-grey-400 hover:text-white font-sans font-semibold text-sm border-orange btn-primary hover:bg-black/40 focus:outline-none active:shadow-xl mr-2">Quarta-Feira</button>
+                    <button onclick="Quinta()"
+                        class=" backdrop-blur-[15px] py-2 px-2 shadow-xl no-underline rounded-full hover:bg-grey-400 hover:text-white font-sans font-semibold text-sm border-orange btn-primary hover:bg-black/40 focus:outline-none active:shadow-xl mr-2">Quinta-Feira</button>
+                    <button onclick="Sexta()"
+                        class=" backdrop-blur-[15px] py-2 px-2 shadow-xl no-underline rounded-full hover:bg-grey-400 hover:text-white font-sans font-semibold text-sm border-orange btn-primary hover:bg-black/40 focus:outline-none active:shadow-xl mr-2">Sexta-Feira</button>
+                </center>
+            </div>
+        </div>
 </body>
+
 </html>

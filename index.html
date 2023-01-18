@@ -1,9 +1,10 @@
 <!DOCTYPE html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="style.css"/>
+
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,42 +14,51 @@
 
     <script>
         var load;
-        
+
         function loadfun() {
             load = setTimeout(showPage, 1000);
         }
-        
+
         function showPage() {
-          document.getElementById("loader").style.display = "none";
-          document.getElementById("myDiv").style.display = "block";
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
         }
-        </script>
+    </script>
 
 </head>
 
-<body onload="loadfun()" class="bgmovie">    
+<body onload="loadfun()" class="bgmovie animate-bottom">
 
-<div id="myDiv" class="animate-bottom">
-    <div id="loader"></div>
-    <div class="p-6 login drop-shadow-2xl bg-white/90 bg-blur-md rounded-lg">
-        <center>
-        <img src="Recursos/logo.png" width="300" height="400" class="p-6 pb-8 drop-shadow-xl">
-        <form>
-            <label style="font-family: 'Roboto', sans-serif;">Usuário</label><br>
-            <input autofocus class="drop-shadow-xl rounded-lg bg-white/100 border-zinc-600 focus:outline-none focus:border-sky-700 focus:ring-1 focus:ring-sky-700 px-2 py-1" type="text">
-            <br><br>
-            <label style="font-family: 'Roboto', sans-serif;">Senha</label><br>
-            <input class="drop-shadow-xl rounded-lg bg-white/100 border-zinc-600 focus:outline-none focus:border-sky-700 focus:ring-1 focus:ring-sky-700 px-2 py-1" type="password">
-            <br><br>
-        </form>
+    <div id="myDiv" class="animate-bottom">
+        <div id="loader"></div>
+        <div class="p-6 login drop-shadow-2xl bg-white/90 bg-blur-md rounded-lg">
+            <center>
+                <img src="Recursos/logo.png" width="300" height="400" class="p-6 pb-8 drop-shadow-xl">
+                <form>
+                    <label style="font-family: 'Roboto', sans-serif;">Usuário</label><br>
+                    <input autofocus
+                        class="drop-shadow-xl rounded-lg bg-white/100 border-zinc-600 focus:outline-none focus:border-sky-700 focus:ring-1 focus:ring-sky-700 px-2 py-1"
+                        type="text">
+                    <br><br>
+                    <label style="font-family: 'Roboto', sans-serif;">Senha</label><br>
+                    <input
+                        class="drop-shadow-xl rounded-lg bg-white/100 border-zinc-600 focus:outline-none focus:border-sky-700 focus:ring-1 focus:ring-sky-700 px-2 py-1"
+                        type="password">
+                    <br><br>
+                </form>
 
-            <a href="page.html"><button style="font-family: 'Roboto', sans-serif;" class="flex items-center justify-center px-12 p-2 bg-sky-500/80 rounded-lg hover:bg-sky-500/100 text-white">Confirmar</button></a>
-            <br>
-            <br>
-            
-            <a class="text-sky-500 underline decoration-sky-500 hover:decoration-sky-700 hover:text-sky-700 overflow-hidden" href="sol.html"><p style="font-family: 'Roboto', sans-serif;"></p>Solução para problemas no Acesso</p></a>
+                <a href="page.html"><button style="font-family: 'Roboto', sans-serif;"
+                        class="flex items-center justify-center px-12 p-2 bg-sky-500/80 rounded-lg hover:bg-sky-500/100 text-white">Confirmar</button></a>
+                <br>
+                <br>
+
+                <a class="text-sky-500 underline decoration-sky-500 hover:decoration-sky-700 hover:text-sky-700 overflow-hidden"
+                    href="sol.html">
+                    <p style="font-family: 'Roboto', sans-serif;"></p>Solução para problemas no Acesso</p>
+                </a>
             </center>
+        </div>
     </div>
-</div>
 </body>
+
 </html>
